@@ -7,7 +7,7 @@ const queue = "email_queue";
   const connection = await amqp.connect("amqp://localhost");
   const channel = await connection.createChannel();
   await channel.assertQueue(queue);
-  console.log("Worker waiting for messages...");
+  console.log("Worker waiting for messages.");
 
   const transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
