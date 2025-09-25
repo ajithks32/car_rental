@@ -1,0 +1,44 @@
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: black;
+    color: white;
+  }
+  .text-gradient {
+    font-size: 3rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #6b7280, #facc15);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+  }
+  .loading-text {
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .highlight {
+    color: #ffee02; /* Yellow */
+  }
+  .loading-animation {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    animation: fadeBlink 1s infinite alternate;
+    color: white;
+  }
+  
+  @keyframes fadeBlink {
+    from {
+      opacity: 0.2;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

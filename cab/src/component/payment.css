@@ -1,0 +1,183 @@
+/* General Styles for Payment Page */
+.pay-banner {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+}
+
+.pay-banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+.pay-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  padding: 10px;
+  width: 90%;
+}
+
+.pay-title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.pay-breadcrumb a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.pay-breadcrumb a:hover {
+  color: #ffee02;
+}
+
+/* Payment Container */
+.pay-container {
+  max-width: 700px;
+  margin: -100px auto 50px;
+  background: #fff;
+  padding: 30px;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+}
+
+.pay-card-body {
+  padding: 30px;
+  animation: fadeInUp 0.8s ease-in-out;
+}
+
+.pay-heading {
+  color: #222;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Payment Method Buttons */
+.pay-option-btn {
+  width: 100%;
+  padding: 12px;
+  font-weight: 600;
+  background-color: #ffee02;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.pay-option-btn:hover {
+  background-color: #fcf567;
+}
+
+/* QR Code Section */
+.qr-code {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.qr-code p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+/* Payment Success Card */
+.pay-success-card {
+  margin-top: 30px;
+  padding: 20px;
+  background: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.pay-success {
+  text-align: center;
+}
+
+.success-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: green;
+}
+
+.pay-success p {
+  font-size: 1rem;
+  margin: 20px 0;
+  color: #333;
+}
+
+/* Screenshot Upload Section */
+.upload-section {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.upload-label {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.upload-input {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+.screenshot-preview {
+  margin-top: 20px;
+}
+
+.screenshot-image {
+  width: 200px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.submit-screenshot-btn {
+  padding: 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.submit-screenshot-btn:hover {
+  background-color: #218838;
+}
+
+.image-submission-message {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: green;
+}
+
+.pay-submit-btn {
+  width: 100%;
+  padding: 12px;
+  font-weight: 600;
+  background-color: rgb(10, 111, 10);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.pay-submit-btn:hover {
+  background-color: green;
+}

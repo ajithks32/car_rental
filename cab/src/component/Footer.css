@@ -1,0 +1,156 @@
+/* Footer Styles */
+*{
+    box-sizing: border-box;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 30px 20px 0;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    margin: auto;
+    gap: 40px;
+  }
+  
+  /* Left Section */
+  .footer-left {
+    flex: 1;
+    min-width: 280px;
+  }
+  
+  .footer-left h2 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .footer-left h2 span {
+    color: #ffee02;
+  }
+  
+  .footer-left p {
+    font-size: 14px;
+    margin-top: 10px;
+    line-height: 1.6;
+  }
+  
+  .footer-social {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+  }
+  
+  .footer-social a {
+    color: #ffee02;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-social a:hover {
+    color: #ffee02;
+  }
+  
+  /* Middle Section */
+  .footer-links {
+    flex: 1;
+    min-width: 280px;
+  }
+  
+  .footer-links h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .footer-links ul {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 8px;
+  }
+  
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+  }
+
+  .footer-links ul {
+    list-style: none; /* Remove default bullets */
+    padding: 0;
+  }
+  
+  .footer-links li {
+    position: relative;
+    padding-left: 20px; /* Space for custom bullet */
+  }
+  
+  .footer-links li::before {
+    content: "•";  /* Unicode for bullet point */
+    color: #ffee02;  /* Change bullet color */
+    font-size: 18px; 
+    position: absolute;
+    left: 0;
+    top: 2px;
+  }
+  
+  
+  .footer-links a:hover {
+    color: #ffee02;
+  }
+  
+  /* Right Section */
+  .footer-contact {
+    flex: 1;
+    min-width: 280px;
+  }
+  
+  .footer-contact h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .footer-contact ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-contact li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  
+  .footer-contact i {
+    color: #ffee02;
+  }
+  
+  /* Footer Bottom Section */
+  .footer-bottom {
+    background-color: black;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 14px;
+    margin-top: 30px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-social {
+      justify-content: center;
+    }
+  }
+  

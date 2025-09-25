@@ -1,0 +1,38 @@
+.vehicle-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .vehicle-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    width: 200px;
+    transition: transform 0.3s ease;
+  }
+  
+  .vehicle-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .vehicle-image {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .vehicle-name {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .vehicle-price {
+    font-weight: bold;
+    color: #28a745;
+  }
+  

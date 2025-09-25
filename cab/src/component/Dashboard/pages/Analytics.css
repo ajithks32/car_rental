@@ -1,0 +1,71 @@
+.analytics-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.analytics-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #004080; /* Dark Blue */
+  margin-bottom: 20px;
+}
+
+.analytics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.analytics-card {
+ 
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  position: relative;
+
+}
+
+.analytics-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.analytics-card h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #00264d; /* Deep Dark Blue */
+}
+
+.analytics-card p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #004080; /* Dark Blue */
+  margin-top: 10px;
+}
+
+.growth-text {
+  display: block;
+  font-size: 16px;
+  margin-top: 5px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.growth-positive {
+  color: #28a745;
+  background: rgba(40, 167, 69, 0.1);
+}
+
+.growth-negative {
+  color: #dc3545;
+  background: rgba(220, 53, 69, 0.1);
+}

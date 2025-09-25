@@ -1,0 +1,52 @@
+/* Custom background color for Navbar */
+.navbar-custom {
+    background-color: #2c3e50 !important; /* Dark blue-gray */
+  }
+/*   
+.navbar{
+    background-color: #2c3e50 !important;
+} */
+.profile-pic {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+.change{
+    background-color: #2c3e50 !important;
+}
+  /* Text color for Navbar links */
+  .navbar-custom .navbar-nav .nav-link {
+    color: white !important;
+  }
+  
+  /* Text color for Navbar brand */
+  .navbar-custom .navbar-brand {
+    color: white !important;
+  }
+  .gaplow{
+    gap:2px !important;
+  }
+  /* Dropdown menu styling */
+  .navbar-custom .dropdown-menu {
+    background-color: #34495e; /* Slightly lighter background for dropdown */
+  }
+  
+  .navbar-custom .dropdown-item {
+    color: white !important;
+  }
+  
+  .navbar-custom .dropdown-item:hover {
+    background-color: #1abc9c; /* Teal color for hover */
+  }
+  
+  /* Toggle button styling */
+  .navbar-custom .navbar-toggler {
+    border-color: white !important;
+  }
+  
+  .navbar-custom .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }

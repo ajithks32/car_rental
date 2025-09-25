@@ -1,0 +1,376 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    color: #333;
+}
+
+/* Taxi Header Banner */
+.taxi-header-banner {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+}
+
+.taxi-banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.taxi-banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.taxi-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.taxi-navigation {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.taxi-navigation a {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 600;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.taxi-navigation a:hover {
+    color: #ffd700;
+}
+
+/* Card Container */
+/* .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-image: url('../image/pattern-5.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+} */
+/* Card Container */
+.card-container {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    /* background-color: #f8f8f8; */
+    background-image: url('../image/pattern-5.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+  }
+  
+  /* Card Grid */
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  /* Card Styling */
+  .taxi-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .taxi-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Grid */
+  @media (max-width: 1024px) {
+    .card-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .card-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
+
+.card-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+/* Card Styling */
+.card {
+    position: relative;
+    width: 350px;
+    height: 700px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    clip-path: polygon(0 18%, 100% 0, 100% 100%, 0 99%);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Card Image Section */
+.card-image-section {
+    position: relative;
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+    background-color: rgba(255, 238, 2, 0.6); /* Keep yellow overlay */
+}
+
+.card-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-icon {
+    position: absolute;
+    bottom: 380px;
+    right: 0;
+    width: 354px;
+    height: 232px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    transition: all 300ms ease;
+    z-index: 2;
+  }
+
+/* Image Overlay */
+.card-image-section::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    background-color: #ffee02; /* Keep yellow overlay */
+    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+    z-index: 1; /* Adjusted for proper visibility */
+}
+/* Card Info Section */
+.card-info {
+    position: relative;
+    padding: 120px 15px 30px;
+    text-align: center;
+    transition: top clip-path 300ms ease;
+    z-index: 2;
+}
+
+/* Card Hover Effect */
+.card-info::before {
+    content: "";
+    position: absolute;
+    top: -10%;
+    left: 0;
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    background: black;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 99%);
+    transition:  300ms ease;
+    z-index: -1;
+}
+
+.card:hover .card-info::before {
+    visibility: visible;
+    top: 0;
+}
+
+.tcard-heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 50px;
+    transition: color 0.3s ease-in-out;
+}
+.tcard-details{
+    color: #666;
+    transition: color 0.3s ease-in-out;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+/* Button */
+.book-btn {
+    display: inline-block;
+    width: 250px;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: white;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid #ffee02;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover .tcard-heading,
+.card:hover .tcard-details {
+    color: white;
+    background-color: black;
+}
+
+.card:hover .book-btn {
+    background-color: #ffee02;
+    color: black;
+    border: none;
+}
+/* 
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    width: 100%;
+} */
+
+  /* Enables swipe and grab effect */
+.swiper .swiper-wrapper {
+    cursor: grab;
+  }
+  
+  .swiper:active .swiper-wrapper {
+    cursor: grabbing;
+  }
+  
+  /* Adjusts SwiperSlide to fit card layout */
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Pagination bullets */
+  .swiper-pagination-bullet {
+    width: 35px !important; /* Increase width */
+    height: 5px !important; /* Reduce height to make it a line */
+    border-radius: 2px !important; /* Slightly rounded edges */
+    background-color: #ffee02 !important; /* Set color */
+    transition: all 0.3s ease-in-out;
+    opacity: 0.5;
+    padding: 3px;
+    border: 2px solid #ffd700;
+  }
+  
+  /* Highlight active dot */
+  .swiper-pagination-bullet-active {
+    background-color: #ffd700 !important;
+    opacity: 1;
+    transform: scaleX(1.2); /* Slightly widen active bullet */
+  }
+  .plan-selection {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    margin: 10px 0;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  .plan-dropdown {
+    width: 30%;
+    padding: 8px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    color: black;
+    cursor: pointer;
+    transition: border 0.3s ease-in-out;
+  }
+  
+  .plan-dropdown:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .taxi-header-banner {
+        height: 40vh;
+    }
+
+    .taxi-navigation a {
+        margin: 0 8px;
+    }
+
+    .card-container {
+        padding: 20px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .taxi-header-banner {
+        height: 30vh;
+    }
+
+    .taxi-navigation a {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .card-container {
+        overflow-x: auto;
+        flex-wrap: nowrap; /* Prevents items from stacking */
+        justify-content: flex-start; /* Align items to the start */
+        padding: 20px;
+    }
+
+    .card-layout {
+        flex-wrap: nowrap;
+        gap: 15px;
+        overflow-x: scroll; /* Allows horizontal scrolling */
+        scrollbar-width: none; /* Hides scrollbar in Firefox */
+        -ms-overflow-style: none; /* Hides scrollbar in IE */
+    }
+
+    .card-layout::-webkit-scrollbar {
+        display: none; /* Hides scrollbar in Chrome/Safari */
+    }
+}

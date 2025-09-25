@@ -1,0 +1,34 @@
+/* ===========================
+   Vendor Page Layout
+=========================== */
+
+.vendor-page {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f8f9fa; /* Light background for contrast */
+}
+/* ===========================
+ Content Area
+=========================== */
+
+.vendor-container {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-height: 100vh;
+  overflow-y: auto;
+}
+
+/* ===========================
+ Responsive Adjustments
+=========================== */
+@media (max-width: 768px) {
+  .vendor-page {
+      flex-direction: column;
+  }
+
+  .vendor-container {
+      padding: 15px;
+  }
+}
